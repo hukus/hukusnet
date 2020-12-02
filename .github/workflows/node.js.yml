@@ -29,8 +29,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ftp.hukus.net
-        username: ${{ secrets.FTP_LOGIN }}
-        password: ${{ secrets.FTP_PW }}
+        username: ${{ secrets.ftp_login }}
+        password: ${{ secrets.ftp_pw }}
         local-dir: __sapper__/export/
         server-dir: public_html/
-        log-level: verbose
+        log-level: standard
