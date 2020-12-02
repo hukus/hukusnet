@@ -37,7 +37,7 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>hukusnet</title>
 </svelte:head>
 
 <h1>hukusnet lives again!</h1>
