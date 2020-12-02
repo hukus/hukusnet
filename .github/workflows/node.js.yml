@@ -31,3 +31,6 @@ jobs:
         server: ftp.hukus.net
         username: ${{ secrets.FTP_LOGIN }}
         password: ${{ secrets.FTP_PW }}
+        local-dir: __sapper__/export/
+        server-dir: public_html/
+        log-level: verbose
