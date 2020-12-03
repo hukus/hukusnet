@@ -3,5 +3,9 @@
     "svelteStrictMode": true,
     "svelteBracketNewLine": true,
     "svelteAllowShorthand": true,
-    "svelteIndentScriptAndStyle": true
+    "svelteIndentScriptAndStyle": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 120  
 }
+  
