@@ -5,32 +5,31 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [ 12.x ]
+        node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Generate static Sapper Export
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: yarn install --frozen-lockfile
-    - run: yarn run export
-    
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: ftp.hukus.net
-        username: ${{ secrets.ftp_login }}
-        password: ${{ secrets.ftp_pw }}
-        local-dir: __sapper__/export/
-        server-dir: public_html/
-        log-level: standard
+      - uses: actions/checkout@v2
+      - name: Generate static Sapper Export
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn install --frozen-lockfile
+      - run: yarn run export
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.hukus.net
+          username: ${{ secrets.ftp_login }}
+          password: ${{ secrets.ftp_pw }}
+          local-dir: __sapper__/export/
+          server-dir: public_html/
+          log-level: standard
