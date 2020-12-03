@@ -17,12 +17,27 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Generate static Sapper Export
+
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install --frozen-lockfile
-      - run: yarn run export
+
+      - name: Configure amplify
+
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID  }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+          aws configure set default.region us-east-1  
+          npm install -g @aws-amplify/cli@4.32.1 --unsafe-perm=true
+          amplify --version
+          amplify configure project --amplify "{\"envName\":\"staging\"}" --yes
+          amplify pull --yes
+
+      - name: Yarn install and build export
+        run: |
+          yarn install --frozen-lockfile
+          yarn run export
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
