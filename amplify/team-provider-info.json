@@ -10,6 +10,11 @@
       "StackName": "amplify-hukusnet-staging-120634",
       "StackId": "arn:aws:cloudformation:eu-central-1:557275016337:stack/amplify-hukusnet-staging-120634/fd2a86c0-355f-11eb-8003-0215706d8a3a",
       "AmplifyAppId": "d3j1szv3pif52v"
+    },
+    "categories": {
+      "auth": {
+        "hukusnetb8616f41": {}
+      }
     }
   }
 }
