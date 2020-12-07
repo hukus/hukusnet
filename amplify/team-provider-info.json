@@ -16,5 +16,26 @@
         "hukusnetb8616f41": {}
       }
     }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hukusnet-prod-235209-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557275016337:role/amplify-hukusnet-prod-235209-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557275016337:role/amplify-hukusnet-prod-235209-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-hukusnet-prod-235209-deployment",
+      "UnauthRoleName": "amplify-hukusnet-prod-235209-unauthRole",
+      "StackName": "amplify-hukusnet-prod-235209",
+      "StackId": "arn:aws:cloudformation:eu-central-1:557275016337:stack/amplify-hukusnet-prod-235209/2e1995f0-35ba-11eb-9561-02d3f3908a12",
+      "AmplifyAppId": "d3j1szv3pif52v"
+    },
+    "categories": {
+      "auth": {
+        "hukusnetb8616f41": {}
+      },
+      "function": {
+        "hukusnetfd4d8edf": {}
+      }
+    }
   }
 }
