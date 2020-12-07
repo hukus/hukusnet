@@ -39,7 +39,7 @@ jobs:
 
       - name: Sapper Export
         run: |
-          yarn install --frozen-lockfile
+          yarn export
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
