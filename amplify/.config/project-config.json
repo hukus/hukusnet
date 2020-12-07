@@ -1,0 +1,17 @@
+{
+  "projectName": "hukusnet",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "none",
+    "config": {
+      "SourceDir": "src",
+      "DistributionDir": "__sapper__/export",
+      "BuildCommand": "npm run export",
+      "StartCommand": "npm.cmd run-script start"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
