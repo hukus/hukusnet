@@ -1,0 +1,26 @@
+2020-12-07T21:42:38.868Z|info : amplify update auth  
+2020-12-07T21:44:26.699Z|info : amplify push core  
+2020-12-07T21:44:42.374Z|info : amplify-provider-awscloudformation.zip-util.downloadZip.s3.getFile([{"Key":"[***]rent-[***]ud-[***]d.zip"},null])
+2020-12-07T21:44:42.381Z|info : amplify-provider-awscloudformation.aws-s3.s3.getFile([{"Key":"[***]rent-[***]ud-[***]d.zip","Bucket":"[***]ify-[***]snet-[***]ing-[***]634-[***]ment"}])
+2020-12-07T21:44:43.514Z|info : amplify-provider-awscloudformation.initialize-env.run.cfn.updateamplifyMetaFileWithStackOutputs([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:44:43.527Z|info : amplify-provider-awscloudformation.aws-cfn.updateamplifyMetaFileWithStackOutputs.cfn.describeStackResources([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:44:43.704Z|info : amplify-provider-awscloudformation.aws-cfn.describeStack.cfn.describeStacks([{"StackName":"[***]rmation:eu-[***]ral-[***]37:stack/[***]ify-[***]snet-[***]ing-[***]634-[***]b8616f41-[***]EBWF3L/[***]a2d0-[***]6e-[***]eb-[***]cb-[***]3973c"}])
+2020-12-07T21:44:43.707Z|info : amplify-provider-awscloudformation.aws-cfn.describeStack.cfn.describeStacks([{"StackName":"[***]rmation:eu-[***]ral-[***]37:stack/[***]ify-[***]snet-[***]ing-[***]634-[***]etfd4d8edf-[***]HIOMJ/[***]6500-[***]6a-[***]eb-[***]53-[***]80b0c"}])
+2020-12-07T21:44:43.925Z|info : amplify-provider-awscloudformation.aws-s3.s3.getFile([{"Key":"[***]ify-[***]json","Bucket":"[***]ify-[***]snet-[***]ing-[***]634-[***]ment"}])
+2020-12-07T21:44:54.385Z|info : amplify-provider-awscloudformation.aws-s3.uploadFile.s3.putObject([{"Key":"[***]ify-[***]fn-[***]ates/[***]th/[***]8616f41-[***]mation-[***]e.yml","Bucket":"[***]ify-[***]snet-[***]ing-[***]634-[***]ment"}])
+2020-12-07T21:44:56.084Z|info : amplify-provider-awscloudformation.push-resources.updateCloudFormationNestedStack(["C:\\Users\\hukus\\projects\\hukusnet\\amplify\\backend\\awscloudformation","C:\\Users\\hukus\\projects\\hukusnet\\amplify\\backend\\awscloudformation\\nested-cloudformation-stack.yml"])
+2020-12-07T21:44:56.105Z|info : amplify-provider-awscloudformation.aws-cfn.updateResourceStack.s3.uploadFile([{}])
+2020-12-07T21:44:56.106Z|info : amplify-provider-awscloudformation.aws-s3.uploadFile.s3.putObject([{"Key":"[***]ted-[***]mation-[***].yml","Bucket":"[***]ify-[***]snet-[***]ing-[***]634-[***]ment"}])
+2020-12-07T21:44:56.294Z|info : amplify-provider-awscloudformation.aws-cfn.updateResourceStack.describeStack([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:44:56.294Z|info : amplify-provider-awscloudformation.aws-cfn.describeStack.cfn.describeStacks([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:44:56.442Z|info : amplify-provider-awscloudformation.aws-cfn.updateResourceStack.updateStack([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:48:05.069Z|info : amplify status core  
+2020-12-07T21:52:13.670Z|info : amplify push core  
+2020-12-07T21:52:29.716Z|info : amplify-provider-awscloudformation.zip-util.downloadZip.s3.getFile([{"Key":"[***]rent-[***]ud-[***]d.zip"},null])
+2020-12-07T21:52:29.724Z|info : amplify-provider-awscloudformation.aws-s3.s3.getFile([{"Key":"[***]rent-[***]ud-[***]d.zip","Bucket":"[***]ify-[***]snet-[***]ing-[***]634-[***]ment"}])
+2020-12-07T21:52:30.861Z|info : amplify-provider-awscloudformation.initialize-env.run.cfn.updateamplifyMetaFileWithStackOutputs([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:52:30.873Z|info : amplify-provider-awscloudformation.aws-cfn.updateamplifyMetaFileWithStackOutputs.cfn.describeStackResources([{"StackName":"[***]ify-[***]snet-[***]ing-[***]634"}])
+2020-12-07T21:52:31.054Z|info : amplify-provider-awscloudformation.aws-cfn.describeStack.cfn.describeStacks([{"StackName":"[***]rmation:eu-[***]ral-[***]37:stack/[***]ify-[***]snet-[***]ing-[***]634-[***]b8616f41-[***]EBWF3L/[***]a2d0-[***]6e-[***]eb-[***]cb-[***]3973c"}])
+2020-12-07T21:52:31.057Z|info : amplify-provider-awscloudformation.aws-cfn.describeStack.cfn.describeStacks([{"StackName":"[***]rmation:eu-[***]ral-[***]37:stack/[***]ify-[***]snet-[***]ing-[***]634-[***]etfd4d8edf-[***]HIOMJ/[***]6500-[***]6a-[***]eb-[***]53-[***]80b0c"}])
+2020-12-07T21:52:31.266Z|info : amplify-provider-awscloudformation.aws-s3.s3.getFile([{"Key":"[***]ify-[***]json","Bucket":"[***]ify-[***]snet-[***]ing-[***]634-[***]ment"}])
+2020-12-07T21:52:42.335Z|info : amplify pull core  

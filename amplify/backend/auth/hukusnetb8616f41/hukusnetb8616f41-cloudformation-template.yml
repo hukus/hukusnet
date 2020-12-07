@@ -153,6 +153,18 @@ Parameters:
     Type: String
   
             
+  
+  userPoolGroups:
+    Type: String
+            
+  
+  adminQueries:
+    Type: String
+            
+  
+  thirdPartyAuth:
+    Type: String
+            
   hostedUIProviderCreds:
     Type: String
   

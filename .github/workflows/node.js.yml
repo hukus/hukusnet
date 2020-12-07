@@ -33,10 +33,13 @@ jobs:
       #     amplify init // change to bash version
       #     amplify pull --yes
 
-      - name: Yarn install and build export
+      - name: Yarn install
         run: |
           yarn install --frozen-lockfile
-          yarn run export
+
+      - name: Sapper Export
+        run: |
+          yarn install --frozen-lockfile
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
