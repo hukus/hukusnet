@@ -1,13 +1,6 @@
 {
-  "function": {
-    "hukusnetfd4d8edf": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
   "auth": {
-    "hukusnetb8616f41": {
+    "hukusnet": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

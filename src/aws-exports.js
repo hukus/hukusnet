@@ -3,12 +3,12 @@
 
 const awsmobile = {
     "aws_project_region": "eu-central-1",
-    "aws_cognito_identity_pool_id": "eu-central-1:82f1f99f-473c-4a05-a936-d50a3c6f6eca",
+    "aws_cognito_identity_pool_id": "eu-central-1:27b84ef9-1a0d-4e22-a5b7-3a2658947169",
     "aws_cognito_region": "eu-central-1",
-    "aws_user_pools_id": "eu-central-1_xpnH61ZDb",
-    "aws_user_pools_web_client_id": "6uigmcv72l1vgtu6o1ailosrvs",
+    "aws_user_pools_id": "eu-central-1_xMipHl1so",
+    "aws_user_pools_web_client_id": "3mh2tg4254pl8p9pi5s1adbq8k",
     "oauth": {
-        "domain": "hukusnet-staging.auth.eu-central-1.amazoncognito.com",
+        "domain": "5cdsc07ywdz2-dev.auth.eu-central-1.amazoncognito.com",
         "scope": [
             "phone",
             "email",
@@ -16,8 +16,8 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "https://hukus.net/,https://hukus.net/",
-        "redirectSignOut": "https://hukus.net/,https://hukus.net/",
+        "redirectSignIn": "https://hukus.net/",
+        "redirectSignOut": "https://hukus.net/",
         "responseType": "code"
     },
     "federationTarget": "COGNITO_USER_POOLS"
