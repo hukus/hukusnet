@@ -1,6 +1,8 @@
 {
-    "resourceNameTruncated": "hukusne6301306",
-    "userPoolName": "hukusnet",
+    "identityPoolName": "hukusnet18798d3e_identitypool_18798d3e",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "hukusn18798d3e",
+    "userPoolName": "hukusnet18798d3e_userpool_18798d3e",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -9,17 +11,12 @@
         "SMS Text Message"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
-    "smsVerificationMessage": "Forgot password code: {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Your verification code",
     "emailVerificationMessage": "Your verification code is {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
-    "passwordPolicyCharacters": [
-        "Requires Lowercase",
-        "Requires Numbers",
-        "Requires Symbols",
-        "Requires Uppercase"
-    ],
+    "passwordPolicyCharacters": [],
     "requiredAttributes": [
         "email"
     ],
@@ -31,11 +28,11 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "hukusne6301306_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "hukusn18798d3e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "e6301306",
-    "resourceName": "hukusnet",
-    "authSelections": "userPoolOnly",
+    "sharedId": "18798d3e",
+    "resourceName": "hukusnet18798d3e",
+    "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -48,25 +45,18 @@
             "Arn"
         ]
     },
-    "serviceName": "Cognito",
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
     "usernameAttributes": [
         "email"
     ],
-    "useDefault": "manual",
-    "userPoolGroups": false,
-    "userPoolGroupList": [],
-    "adminQueries": false,
-    "hostedUI": true,
-    "hostedUIDomainName": "hukusnet-dev",
+    "hostedUIDomainName": "hukusnet18798d3e-18798d3e",
     "authProvidersUserPool": [
         "Facebook"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}}]",
-    "dependsOn": [],
-    "triggers": "{}",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"email\"],\"CallbackURLs\":[\"https://hukus.net/\"],\"LogoutURLs\":[\"https://hukus.net/\"]}",
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "permissions": []
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://hukus.net/\"],\"LogoutURLs\":[\"https://hukus.net/\"]}",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "dependsOn": []
 }

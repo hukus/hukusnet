@@ -1,6 +1,6 @@
 {
   "auth": {
-    "hukusnet": {
+    "hukusnet18798d3e": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
