@@ -1,10 +1,8 @@
 {
-    "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "hukusne6301306",
     "userPoolName": "hukusnet",
     "autoVerifiedAttributes": [
-        "phone_number"
+        "email"
     ],
     "mfaConfiguration": "OFF",
     "mfaTypes": [
@@ -37,7 +35,7 @@
     "userpoolClientSetAttributes": false,
     "sharedId": "e6301306",
     "resourceName": "hukusnet",
-    "authSelections": "identityPoolAndUserPool",
+    "authSelections": "userPoolOnly",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -58,14 +56,17 @@
     "userPoolGroups": false,
     "userPoolGroupList": [],
     "adminQueries": false,
-    "thirdPartyAuth": false,
-    "authProviders": [],
     "hostedUI": true,
-    "hostedUIDomainName": "5cdsc07ywdz2",
+    "hostedUIDomainName": "hukusnet-dev",
     "authProvidersUserPool": [
         "Facebook"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://hukus.net/\"],\"LogoutURLs\":[\"https://hukus.net/\"]}",
-    "dependsOn": []
+    "dependsOn": [],
+    "triggers": "{}",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"email\"],\"CallbackURLs\":[\"https://hukus.net/\"],\"LogoutURLs\":[\"https://hukus.net/\"]}",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": []
 }

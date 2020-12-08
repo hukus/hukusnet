@@ -10,6 +10,11 @@
       "StackName": "amplify-hukusnet-dev-03043",
       "StackId": "arn:aws:cloudformation:eu-central-1:557275016337:stack/amplify-hukusnet-dev-03043/3ace7540-38e4-11eb-ab0d-0ab7fff4b680",
       "AmplifyAppId": "d34q5geln0vebh"
+    },
+    "categories": {
+      "auth": {
+        "hukusnet": {}
+      }
     }
   }
 }
