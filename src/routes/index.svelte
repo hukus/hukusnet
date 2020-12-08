@@ -35,24 +35,24 @@
 </style>
 
 <script>
-  import successKid from "images/successkid.jpg";
-  import { Auth } from "aws-amplify";
+  import successKid from 'images/successkid.jpg';
+  import { Auth } from 'aws-amplify';
 
   async function signUp() {
     try {
       const { user } = await Auth.signUp();
       console.log(user);
     } catch (error) {
-      console.log("error signing up:", error);
+      console.log('error signing up:', error);
     }
   }
 
   async function checkUser() {
     try {
       const user = await Auth.currentAuthenticatedUser();
-      console.log("user:", user);
+      console.log('user:', user);
     } catch (error) {
-      console.log("error getting user:", error);
+      console.log('error getting user:', error);
     }
   }
 </script>
@@ -63,11 +63,12 @@
 
 <h1>hukusnet lives again!</h1>
 
-<figure><img alt="Success Kid" src={successKid} /></figure>
+<figure><img alt="Success Kid" src="{successKid}" /></figure>
 
 <p>And now let's add AWS Amplify support...</p>
 
-<button on:click={() => Auth.federatedSignIn({ provider: 'Facebook' })}>Facebook
-  Sign in</button>
-<button on:click={() => Auth.federatedSignIn()}>Sign in</button>
-<button on:click={checkUser}>Check user</button>
+<p>
+  <button on:click="{() => Auth.federatedSignIn({ provider: 'Facebook' })}">Facebook Sign in</button>
+  <button on:click="{() => Auth.federatedSignIn()}">Sign in</button>
+  <button on:click="{checkUser}">Check user</button>
+</p>
