@@ -6,23 +6,5 @@
       "dependsOn": [],
       "customAuth": false
     }
-  },
-  "api": {
-    "hukusnetgql": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
-      "output": {
-        "authConfig": {
-          "defaultAuthentication": {
-            "authenticationType": "API_KEY",
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 365,
-              "description": "hukusnet-dev-key"
-            }
-          },
-          "additionalAuthenticationProviders": []
-        }
-      }
-    }
   }
 }
