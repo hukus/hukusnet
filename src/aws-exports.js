@@ -20,7 +20,11 @@ const awsmobile = {
         "redirectSignOut": "https://hukus.net/",
         "responseType": "code"
     },
-    "federationTarget": "COGNITO_USER_POOLS"
+    "federationTarget": "COGNITO_USER_POOLS",
+    "aws_appsync_graphqlEndpoint": "https://cuorifqoljawbnsw4u2jxvgr34.appsync-api.eu-central-1.amazonaws.com/graphql",
+    "aws_appsync_region": "eu-central-1",
+    "aws_appsync_authenticationType": "API_KEY",
+    "aws_appsync_apiKey": "da2-eymr2nwnwvgsfap662i5d72ccm"
 };
 
 
