@@ -3,4 +3,66 @@ type Todo @model @auth(rules: [{allow: public}]) {
   name: String!
   description: String
 }
- 
+
+input CreatePostsInput {
+  id: Int!
+  userId: Int!
+  postDate: AWSDateTime
+}
+
+type Posts {
+  id: Int!
+  userId: Int!
+  postDate: AWSDateTime
+}
+
+input UpdatePostsInput {
+  id: Int!
+  userId: Int
+  postDate: AWSDateTime
+}
+
+input CreateUsersInput {
+  id: Int!
+  name: String!
+  email: String!
+}
+
+type Users {
+  id: Int!
+  name: String!
+  email: String!
+}
+
+input UpdateUsersInput {
+  id: Int!
+  name: String
+  email: String
+}
+
+type Mutation {
+  deletePosts(id: Int!): Posts
+  createPosts(createPostsInput: CreatePostsInput!): Posts
+  updatePosts(updatePostsInput: UpdatePostsInput!): Posts
+  deleteUsers(id: Int!): Users
+  createUsers(createUsersInput: CreateUsersInput!): Users
+  updateUsers(updateUsersInput: UpdateUsersInput!): Users
+}
+
+type Query {
+  getPosts(id: Int!): Posts
+  listPostss: [Posts]
+  getUsers(id: Int!): Users
+  listUserss: [Users]
+}
+
+type Subscription {
+  onCreatePosts: Posts @aws_subscribe(mutations: ["createPosts"])
+  onCreateUsers: Users @aws_subscribe(mutations: ["createUsers"])
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}

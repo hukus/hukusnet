@@ -4,8 +4,10 @@ import { schema } from './schema';
 
 
 
-const { Todo } = initSchema(schema);
+const { Todo, Posts, Users } = initSchema(schema);
 
 export {
-  Todo
+  Todo,
+  Posts,
+  Users
 };
