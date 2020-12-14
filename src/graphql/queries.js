@@ -7,6 +7,7 @@ export const getPosts = /* GraphQL */ `
       id
       userId
       postDate
+      content
     }
   }
 `;
@@ -16,6 +17,7 @@ export const listPostss = /* GraphQL */ `
       id
       userId
       postDate
+      content
     }
   }
 `;

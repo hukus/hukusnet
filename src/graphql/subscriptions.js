@@ -7,6 +7,7 @@ export const onCreatePosts = /* GraphQL */ `
       id
       userId
       postDate
+      content
     }
   }
 `;

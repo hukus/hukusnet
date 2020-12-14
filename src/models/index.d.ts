@@ -6,6 +6,7 @@ export declare class Posts {
   readonly id: number;
   readonly userId: number;
   readonly postDate?: string;
+  readonly content?: string;
   constructor(init: ModelInit<Posts>);
 }
 

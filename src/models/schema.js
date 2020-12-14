@@ -76,6 +76,13 @@ export const schema = {
                     "type": "AWSDateTime",
                     "isRequired": false,
                     "attributes": []
+                },
+                "content": {
+                    "name": "content",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
                 }
             }
         },
@@ -106,5 +113,5 @@ export const schema = {
             }
         }
     },
-    "version": "33756b692de550316ef217a13f42be09"
+    "version": "d2adf8a3f834557d402ab2caf5e73435"
 };

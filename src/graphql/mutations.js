@@ -7,6 +7,7 @@ export const deletePosts = /* GraphQL */ `
       id
       userId
       postDate
+      content
     }
   }
 `;
@@ -16,6 +17,7 @@ export const createPosts = /* GraphQL */ `
       id
       userId
       postDate
+      content
     }
   }
 `;
@@ -25,6 +27,7 @@ export const updatePosts = /* GraphQL */ `
       id
       userId
       postDate
+      content
     }
   }
 `;

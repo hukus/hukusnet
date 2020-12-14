@@ -8,18 +8,21 @@ input CreatePostsInput {
   id: Int!
   userId: Int!
   postDate: AWSDateTime
+  content: String
 }
 
 type Posts {
   id: Int!
   userId: Int!
   postDate: AWSDateTime
+  content: String
 }
 
 input UpdatePostsInput {
   id: Int!
   userId: Int
   postDate: AWSDateTime
+  content: String
 }
 
 input CreateUsersInput {
