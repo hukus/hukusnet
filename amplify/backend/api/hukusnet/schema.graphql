@@ -1,61 +1,31 @@
-type Todo @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String!
-  description: String
-}
-
-input CreatePostsInput {
-  id: Int!
-  userId: Int!
-  postDate: AWSDateTime
-  content: String
-}
-
-type Posts {
-  id: Int!
-  userId: Int!
-  postDate: AWSDateTime
-  content: String
-}
-
-input UpdatePostsInput {
-  id: Int!
-  userId: Int
-  postDate: AWSDateTime
-  content: String
-}
-
-input CreateUsersInput {
-  id: Int!
-  name: String!
-  email: String!
-}
-
-type Users {
-  id: Int!
-  name: String!
-  email: String!
-}
-
-input UpdateUsersInput {
-  id: Int!
-  name: String
-  email: String
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
 }
 
 type Mutation {
-  deletePosts(id: Int!): Posts
   createPosts(createPostsInput: CreatePostsInput!): Posts
-  updatePosts(updatePostsInput: UpdatePostsInput!): Posts
-  deleteUsers(id: Int!): Users
   createUsers(createUsersInput: CreateUsersInput!): Users
+  deletePosts(id: Int!): Posts
+  deleteUsers(id: Int!): Users
+  updatePosts(updatePostsInput: UpdatePostsInput!): Posts
   updateUsers(updateUsersInput: UpdateUsersInput!): Users
+}
+
+type Posts {
+  content: String
+  id: Int!
+  postDate: String
+  userId: Int!
 }
 
 type Query {
   getPosts(id: Int!): Posts
-  listPostss: [Posts]
+  getUserByName(name: String!): [Users]
+  getUserPosts(userId: Int!): [Posts]
   getUsers(id: Int!): Users
+  listPostss: [Posts]
   listUserss: [Users]
 }
 
@@ -64,8 +34,34 @@ type Subscription {
   onCreateUsers: Users @aws_subscribe(mutations: ["createUsers"])
 }
 
-schema {
-  query: Query
-  mutation: Mutation
-  subscription: Subscription
+type Users {
+  email: String!
+  id: Int!
+  name: String!
+}
+
+input CreatePostsInput {
+  content: String
+  id: Int!
+  postDate: String
+  userId: Int!
+}
+
+input CreateUsersInput {
+  email: String!
+  id: Int!
+  name: String!
+}
+
+input UpdatePostsInput {
+  content: String
+  id: Int!
+  postDate: String
+  userId: Int
+}
+
+input UpdateUsersInput {
+  email: String
+  id: Int!
+  name: String
 }

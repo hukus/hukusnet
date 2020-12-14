@@ -1,28 +1,28 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-hukusnet-dev-03043-authRole",
-            "UnauthRoleArn": "arn:aws:iam::557275016337:role/amplify-hukusnet-dev-03043-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::557275016337:role/amplify-hukusnet-dev-03043-authRole",
-            "Region": "eu-central-1",
-            "DeploymentBucketName": "amplify-hukusnet-dev-03043-deployment",
-            "UnauthRoleName": "amplify-hukusnet-dev-03043-unauthRole",
-            "StackName": "amplify-hukusnet-dev-03043",
-            "StackId": "arn:aws:cloudformation:eu-central-1:557275016337:stack/amplify-hukusnet-dev-03043/3ace7540-38e4-11eb-ab0d-0ab7fff4b680",
-            "AmplifyAppId": "d34q5geln0vebh"
-        },
-        "categories": {
-            "auth": {
-                "hukusnet18798d3e": {}
-            },
-            "api": {
-                "hukusnet": {
-                    "rdsRegion": "eu-central-1",
-                    "rdsClusterIdentifier": "arn:aws:rds:eu-central-1:557275016337:cluster:aurora-2",
-                    "rdsSecretStoreArn": "arn:aws:secretsmanager:eu-central-1:557275016337:secret:rds-db-credentials/cluster-7O52XN2P3OKSKRAJLL3YU5NOQY/admin-omQgy5",
-                    "rdsDatabaseName": "contentdb"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hukusnet-dev-03043-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557275016337:role/amplify-hukusnet-dev-03043-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557275016337:role/amplify-hukusnet-dev-03043-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-hukusnet-dev-03043-deployment",
+      "UnauthRoleName": "amplify-hukusnet-dev-03043-unauthRole",
+      "StackName": "amplify-hukusnet-dev-03043",
+      "StackId": "arn:aws:cloudformation:eu-central-1:557275016337:stack/amplify-hukusnet-dev-03043/3ace7540-38e4-11eb-ab0d-0ab7fff4b680",
+      "AmplifyAppId": "d34q5geln0vebh"
+    },
+    "categories": {
+      "auth": {
+        "hukusnet18798d3e": {}
+      },
+      "api": {
+        "hukusnet": {
+          "rdsRegion": "eu-central-1",
+          "rdsClusterIdentifier": "arn:aws:rds:eu-central-1:557275016337:cluster:aurora-2",
+          "rdsSecretStoreArn": "arn:aws:secretsmanager:eu-central-1:557275016337:secret:rds-db-credentials/cluster-7O52XN2P3OKSKRAJLL3YU5NOQY/admin-omQgy5",
+          "rdsDatabaseName": "contentdb"
         }
+      }
     }
+  }
 }

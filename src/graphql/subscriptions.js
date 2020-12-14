@@ -4,61 +4,19 @@
 export const onCreatePosts = /* GraphQL */ `
   subscription OnCreatePosts {
     onCreatePosts {
-      id
-      userId
-      postDate
       content
+      id
+      postDate
+      userId
     }
   }
 `;
 export const onCreateUsers = /* GraphQL */ `
   subscription OnCreateUsers {
     onCreateUsers {
-      id
-      name
       email
-    }
-  }
-`;
-export const onCreateTodo = /* GraphQL */ `
-  subscription OnCreateTodo {
-    onCreateTodo {
       id
       name
-      description
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateTodo = /* GraphQL */ `
-  subscription OnUpdateTodo {
-    onUpdateTodo {
-      id
-      name
-      description
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteTodo = /* GraphQL */ `
-  subscription OnDeleteTodo {
-    onDeleteTodo {
-      id
-      name
-      description
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
     }
   }
 `;

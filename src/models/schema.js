@@ -1,70 +1,19 @@
 export const schema = {
-    "models": {
-        "Todo": {
-            "name": "Todo",
-            "fields": {
-                "id": {
-                    "name": "id",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "name": {
-                    "name": "name",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "description": {
-                    "name": "description",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                }
-            },
-            "syncable": true,
-            "pluralName": "Todos",
-            "attributes": [
-                {
-                    "type": "model",
-                    "properties": {}
-                },
-                {
-                    "type": "auth",
-                    "properties": {
-                        "rules": [
-                            {
-                                "allow": "public",
-                                "operations": [
-                                    "create",
-                                    "update",
-                                    "delete",
-                                    "read"
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ]
-        }
-    },
+    "models": {},
     "enums": {},
     "nonModels": {
         "Posts": {
             "name": "Posts",
             "fields": {
-                "id": {
-                    "name": "id",
+                "content": {
+                    "name": "content",
                     "isArray": false,
-                    "type": "Int",
-                    "isRequired": true,
+                    "type": "String",
+                    "isRequired": false,
                     "attributes": []
                 },
-                "userId": {
-                    "name": "userId",
+                "id": {
+                    "name": "id",
                     "isArray": false,
                     "type": "Int",
                     "isRequired": true,
@@ -73,15 +22,15 @@ export const schema = {
                 "postDate": {
                     "name": "postDate",
                     "isArray": false,
-                    "type": "AWSDateTime",
+                    "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
-                "content": {
-                    "name": "content",
+                "userId": {
+                    "name": "userId",
                     "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
+                    "type": "Int",
+                    "isRequired": true,
                     "attributes": []
                 }
             }
@@ -89,6 +38,13 @@ export const schema = {
         "Users": {
             "name": "Users",
             "fields": {
+                "email": {
+                    "name": "email",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
                 "id": {
                     "name": "id",
                     "isArray": false,
@@ -102,16 +58,9 @@ export const schema = {
                     "type": "String",
                     "isRequired": true,
                     "attributes": []
-                },
-                "email": {
-                    "name": "email",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
                 }
             }
         }
     },
-    "version": "d2adf8a3f834557d402ab2caf5e73435"
+    "version": "46caecc5ee883e74f908e0d6d61f5ad2"
 };

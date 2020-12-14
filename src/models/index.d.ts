@@ -3,24 +3,17 @@ import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplif
 
 
 export declare class Posts {
-  readonly id: number;
-  readonly userId: number;
-  readonly postDate?: string;
   readonly content?: string;
+  readonly id: number;
+  readonly postDate?: string;
+  readonly userId: number;
   constructor(init: ModelInit<Posts>);
 }
 
 export declare class Users {
+  readonly email: string;
   readonly id: number;
   readonly name: string;
-  readonly email: string;
   constructor(init: ModelInit<Users>);
 }
 
-export declare class Todo {
-  readonly id: string;
-  readonly name: string;
-  readonly description?: string;
-  constructor(init: ModelInit<Todo>);
-  static copyOf(source: Todo, mutator: (draft: MutableModel<Todo>) => MutableModel<Todo> | void): Todo;
-}
