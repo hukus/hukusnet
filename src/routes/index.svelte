@@ -24,7 +24,7 @@
   }
 
   p {
-    margin: 1em auto;
+    margin: 2em auto;
   }
 
   @media (min-width: 480px) {
@@ -36,16 +36,10 @@
 
 <script>
   import successKid from 'images/successkid.jpg';
-  import { Auth } from 'aws-amplify';
+  import { Auth, API, graphqlOperation } from 'aws-amplify';
+  import { getPosts, listPostss } from './../graphql/queries';
 
-  async function signUp() {
-    try {
-      const { user } = await Auth.signUp();
-      console.log(user);
-    } catch (error) {
-      console.log('error signing up:', error);
-    }
-  }
+  $: posts = [];
 
   async function checkUser() {
     try {
@@ -55,6 +49,21 @@
       console.log('error getting user:', error);
     }
   }
+
+  async function pingGraphql() {
+    try {
+      const response = await API.graphql(graphqlOperation(listPostss));
+      posts = response.data.listPostss;
+      console.log('post:', posts);
+    } catch (error) {
+      console.log('error getting post:', error);
+    }
+  }
+
+  const formatDate = (datestring) => {
+    const date = new Date(datestring);
+    return date.toLocaleDateString();
+  };
 </script>
 
 <svelte:head>
@@ -71,4 +80,11 @@
   <button on:click="{() => Auth.federatedSignIn({ provider: 'Facebook' })}">Facebook Sign in</button>
   <button on:click="{() => Auth.federatedSignIn()}">Sign in</button>
   <button on:click="{checkUser}">Check user</button>
+  <button on:click="{pingGraphql}">Get Posts from GQL</button>
+</p>
+
+<p>
+  {#each posts as post}
+    <p>{post.content} - {formatDate(post.postDate)}</p>
+  {/each}
 </p>
