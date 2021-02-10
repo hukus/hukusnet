@@ -74,17 +74,14 @@
 
 <figure><img alt="Success Kid" src="{successKid}" /></figure>
 
-<p>And now let's add AWS Amplify support...</p>
+<p>AWS Amplify support testing space...</p>
 
 <p>
-  <button on:click="{() => Auth.federatedSignIn({ provider: 'Facebook' })}">Facebook Sign in</button>
+  <!-- <button on:click="{() => Auth.federatedSignIn({ provider: 'Facebook' })}">Facebook Sign in</button>
   <button on:click="{() => Auth.federatedSignIn()}">Sign in</button>
-  <button on:click="{checkUser}">Check user</button>
   <button on:click="{pingGraphql}">Get Posts from GQL</button>
-</p>
-
-<p>
   {#each posts as post}
     <p>{post.content} - {formatDate(post.postDate)}</p>
   {/each}
+  <button on:click="{checkUser}">Check user</button> -->
 </p>
