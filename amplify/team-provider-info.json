@@ -14,14 +14,6 @@
     "categories": {
       "auth": {
         "hukusnet18798d3e": {}
-      },
-      "api": {
-        "hukusnet": {
-          "rdsRegion": "eu-central-1",
-          "rdsClusterIdentifier": "arn:aws:rds:eu-central-1:557275016337:cluster:aurora-2",
-          "rdsSecretStoreArn": "arn:aws:secretsmanager:eu-central-1:557275016337:secret:rds-db-credentials/cluster-7O52XN2P3OKSKRAJLL3YU5NOQY/admin-omQgy5",
-          "rdsDatabaseName": "contentdb"
-        }
       }
     }
   }
